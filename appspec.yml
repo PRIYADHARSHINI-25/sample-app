@@ -14,10 +14,6 @@ hooks:
     - location: scripts/httpd_start.sh
       timeout: 300
       runas: root
-  ApplicationStart:
-    - location: scripts/httpd_stop.sh
-      timeout: 300
-      runas: root
 branch_config:
   main:
     deploymentGroupName: web-dpg
