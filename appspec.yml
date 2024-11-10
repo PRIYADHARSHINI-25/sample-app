@@ -18,3 +18,8 @@ hooks:
     - location: scripts/httpd_stop.sh
       timeout: 300
       runas: root
+branch_config:
+  main:
+    deploymentGroupName: web-dpg
+    deploymentGroupConfig: 
+      serviceRoleArn: arn:aws:iam::741448956481:role/codedeploy
